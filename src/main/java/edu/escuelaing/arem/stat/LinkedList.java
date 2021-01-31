@@ -15,13 +15,21 @@ import java.util.ListIterator;
  * @author StivenVanegas
  */
 public class LinkedList<E> implements List<E>{
-    private Node<E> first;
-    private Node<E> last;
+    private Node<E> first = null;
+    private Node<E> last = null;
     private int size = 0;
+    
+    public LinkedList(){
+
+    }
     
     @Override
     public int size() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return this.size;
+    }
+    
+    public Node getFirst(){
+        return this.first;
     }
 
     @Override
@@ -51,9 +59,10 @@ public class LinkedList<E> implements List<E>{
 
     @Override
     public boolean add(E e) {
-        Node n = new Node(e);
+        Node<E> n = new Node(e);
         n.setNext(first);
         first = n;
+        size +=1;
         return true;
     }
 

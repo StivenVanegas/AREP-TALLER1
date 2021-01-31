@@ -22,4 +22,13 @@ public class Node<E> {
      this.next = node;
     }
     
+    public Node getNext(){
+        return this.next;
+    }
+    
+    public E getValue(){
+        return this.value;
+    }
+    
+    
 }
