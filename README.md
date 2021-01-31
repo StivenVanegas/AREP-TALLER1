@@ -14,7 +14,7 @@ Las **LinkedList** son un tipo de datos abstractos comunes que se utilizan para 
 * Maven
 * Git
 
-###J AVADOC
+### JAVADOC
 
 Para generar la documentacion java del proyecto ejecute las siguientes instrucciones.
 
